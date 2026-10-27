@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/7d87bdf4-8e84-49f9-9ec3-888feae0e112>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 1058d8e5-7fe2-40b5-b386-ba0ef7bda026
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 1058d8e5-7fe2-40b5-b386-ba0ef7bda026
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 091f9532-0e40-41a4-8462-bf3e1b51ef4e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/091f9532-0e40-41a4-8462-bf3e1b51ef4e>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7cc0e56a-6841-43fb-8b14-abcc7f467520
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    baseMaterial: false
+    debugColliders: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - baseMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Asset.Material baseMaterial {"hint":"Unlit material for precise geographic country meshes"}'
+    - '// @input bool debugColliders {"hint":"Show exact geographic hit surfaces for debugging"}'

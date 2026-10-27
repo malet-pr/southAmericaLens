@@ -1,0 +1,43 @@
+# BEGIN Lens Studio managed Agents-Docs block
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# END Lens Studio managed Agents-Docs block
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json
+
+# Lens Studio generated data and machine-local editor state
+/Cache/
+/Support/
+/Workspaces/
+/PluginsUserPreferences/
+*.esproj.*.lock
+/ls-live-instance.json
+/.virtual-scene.json
+/.icon_tmp/
+
+# Local assistant integrations and toolkit caches
+/.clad/
+/.claude/
+/.codex/
+/.cursor/
+/.vscode/
+/agent/
+
+# Credentials and local signing keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Operating-system and Python caches
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

@@ -1,0 +1,64 @@
+- !<AssetImportMetadata/0dac412d-7175-43de-87fb-61ac55394f5f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 085f1659-bd12-40ac-a593-355b91a54b5c
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 085f1659-bd12-40ac-a593-355b91a54b5c
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 82b64a3f-be15-4244-a9c1-d8cee8a64d83
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/82b64a3f-be15-4244-a9c1-d8cee8a64d83>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 46240646-d46d-4db8-880f-eb8d4e34d06d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    camera: false
+    deskDistanceCm: false
+    map: false
+    navigation: false
+    reader: false
+    transitionSeconds: false
+    worldRoot: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      worldRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      map: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      reader: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      navigation: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      transitionSeconds: 0.400000
+      deskDistanceCm: !<float> 95.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Component.Camera camera {"hint":"Initial viewer camera"}'
+    - '// @input SceneObject worldRoot {"hint":"World anchored environment root"}'
+    - '// @input AssignableType_1 map {"hint":"Precise geographic map component"}'
+    - '// @input AssignableType_2 reader {"hint":"Reading panel UI"}'
+    - '// @input AssignableType_3 navigation {"hint":"Atlas region toolbar UI"}'
+    - '// @input float transitionSeconds = 0.4 {"hint":"Time in seconds for each rise and return"}'
+    - '// @input float deskDistanceCm = 95 {"hint":"Horizontal desk distance from the initial viewer, centimeters"}'

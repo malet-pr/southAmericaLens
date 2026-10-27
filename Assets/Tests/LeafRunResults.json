@@ -1,0 +1,47 @@
+{
+  "environment": {
+    "lensStudio": "5.23.2.26081320",
+    "platform": "SPECS",
+    "executionTarget": "Lens Studio Preview",
+    "leafPackage": "2.0.2",
+    "sikPackage": "2.0.0",
+    "uikitPackage": "2.0.0"
+  },
+  "diagnosticPolicy": "fail-fast",
+  "results": [
+    {
+      "scenarioId": "atlas-1-map-region-small-country",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-2-rise-highlight-flag",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-3-all-fields-fixed-close",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-4-switch-return-close",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-5-world-anchor-walk-return",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-ik-reader-controls",
+      "status": "succeeded",
+      "target": "preview"
+    }
+  ],
+  "logBaseline": {
+    "logFile": "C:/Users/nmale/AppData/Local/Snap/Lens Studio/logs/LensStudioLog-2026-10-26-21-10-50-139-2b01e.txt",
+    "byteOffset": 1411000
+  }
+}
