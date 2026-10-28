@@ -21,4 +21,13 @@ Generated caches, editor workspaces, local integration settings and private sign
 
 The project has been saved, all eight final LEAF scenarios passed, and the exact Lens-side pass lines are in `Assets/Tests/LEAF-preview-evidence.log`. All 36 country-summary pages fit the larger text. The complete map, flag, fixed close control and longest country page were reviewed together in Preview. The library and welcome guide were also checked for world anchoring.
 
-Next session can start with a visual review and design refinements. There are no known unfinished done criteria. The repository is local only; it has not been published or pushed.
+Implementation checkpoint: `165c2c5` (readability, guidance and navigation improvements). All eight final LEAF scenarios passed at this checkpoint. There are no known unfinished done criteria. The repository is local only; it has not been published or pushed.
+
+Review handoff, 2026-10-27: the user will review the saved build and return with feedback. Resume with that feedback before making further design changes. Review checklist:
+
+1. Open Brazil and read all three pages; check text size, contrast and spacing.
+2. Enlarge North and select Suriname; check small-country selection.
+3. Switch countries, close with X, and move around the desk; check placement and comfort.
+4. Repeat on physical SPECS if available; device comfort and hand tracking have not been verified.
+
+After review and any necessary refinements, prepare screenshots, a short demo script and a Devpost submission draft. Publishing and submission are still pending.
