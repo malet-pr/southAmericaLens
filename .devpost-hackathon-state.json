@@ -1,0 +1,32 @@
+{
+  "plugin": "devpost-hackathon",
+  "version": 2,
+  "hackathon": {
+    "slug": "learn-specs",
+    "name": "Learn AR with SPECS",
+    "url": "https://learn-specs.devpost.com/",
+    "selected": true,
+    "source": "known"
+  },
+  "participant": { "name": "", "display_name": "" },
+  "project": {
+    "name": "South America Library Atlas",
+    "summary": "Explore a world-anchored South America atlas on an antique library desk, with country information rising from the map.",
+    "ai_usage": "SPECS-generated desk and bookcase assets; AI-assisted build. No runtime AI or network calls.",
+    "codex_usage": "Implemented and refined the Lens through CLAD and Lens Studio MCP, authored LEAF scenarios, and recorded Preview verification.",
+    "review_file": "devpost/review-notes.md"
+  },
+  "current_stage": "prepare-submission",
+  "completed_stages": ["start-hackathon", "review-hackathon-rules"],
+  "rules_acknowledged": true,
+  "rules_reviewed_on": "2026-10-28",
+  "learning": {
+    "status": "not-started",
+    "current_step": "",
+    "completed_steps": [],
+    "plan_file": "",
+    "checklist_file": ""
+  },
+  "submission": { "draft_file": "devpost-submission.md", "status": "drafting" },
+  "next_command": "prepare-submission"
+}

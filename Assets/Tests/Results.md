@@ -27,6 +27,10 @@ Reader: 55×33 cm at local [0,128,5]. Initial desk distance: 110 cm. Region tool
 
 These visual observations supplement LEAF: mesh counts and text assertions alone cannot establish recognizability, readability or comfort.
 
+### User simulator review — 2026-10-28
+
+The user confirmed that the project matches the discussed design, reported no problems reading the cards or moving around the room, and appreciated removal of the headless person from an early pass. The user approved continuing with demo and submission preparation, with no further design changes requested. This is reported manual simulator feedback, not a new LEAF run or physical-device test. The eight automated pass results above remain dated 2026-10-27.
+
 **Logic proven in Preview. Feel unproven on real glasses:** long-term comfort, actual hand tracking, additive-display contrast in a real room and perceived educational advantage over a phone.
 
 ## Build contents

@@ -8,6 +8,9 @@ Open `southAmerica.esproj` in Lens Studio **5.23.2**. The build and tests were v
 * Verification: [Assets/Tests/Results.md](Assets/Tests/Results.md)
 * LEAF scenario registration: [Assets/Tests/LeafIndex.ts](Assets/Tests/LeafIndex.ts)
 * Country reference sources: [Assets/AtlasData/SOURCES.md](Assets/AtlasData/SOURCES.md)
+* Submission draft: [devpost-submission.md](devpost-submission.md)
+* Demo script and screenshot targets: [devpost/demo-plan.md](devpost/demo-plan.md)
+* Official form worksheet: [devpost/official-form-answers.md](devpost/official-form-answers.md)
 
 **All five done criteria have passing LEAF coverage. The IK control, all-country readability and welcome-guide checks also passed (8/8 total, verified 2026-10-27).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
 
@@ -21,13 +24,10 @@ Generated caches, editor workspaces, local integration settings and private sign
 
 The project has been saved, all eight final LEAF scenarios passed, and the exact Lens-side pass lines are in `Assets/Tests/LEAF-preview-evidence.log`. All 36 country-summary pages fit the larger text. The complete map, flag, fixed close control and longest country page were reviewed together in Preview. The library and welcome guide were also checked for world anchoring.
 
-Implementation checkpoint: `165c2c5` (readability, guidance and navigation improvements). All eight final LEAF scenarios passed at this checkpoint. There are no known unfinished done criteria. The repository is local only; it has not been published or pushed.
+Implementation checkpoint: `165c2c5` (readability, guidance and navigation improvements). All eight final LEAF scenarios passed at this checkpoint. There are no known unfinished done criteria. The existing `origin` points to `git@github.com:malet-pr/southAmericaLens.git`; public access and remote contents have not been verified. No push was made during submission preparation.
 
-Review handoff, 2026-10-27: the user will review the saved build and return with feedback. Resume with that feedback before making further design changes. Review checklist:
+User review completed, 2026-10-28: the user confirmed that the project matches the design, reported no difficulty reading the cards or moving around the room, and appreciated removal of the headless person visible in an early pass. This was a simulator review only; the user does not have SPECS glasses. No further design changes were requested. The user approved continuing to demo and submission preparation.
 
-1. Open Brazil and read all three pages; check text size, contrast and spacing.
-2. Enlarge North and select Suriname; check small-country selection.
-3. Switch countries, close with X, and move around the desk; check placement and comfort.
-4. Repeat on physical SPECS if available; device comfort and hand tracking have not been verified.
+Submission preparation, 2026-10-28: the local write-up, 2:35 narrated demo plan, five screenshot targets and official form worksheet are drafted. The user confirmed the current rules review, and local workflow state is recorded in `.devpost-hackathon-state.json`. Public screenshots/video, repository-access verification and personal form answers remain pending. No application code changed and no tests were rerun during this preparation pass.
 
-After review and any necessary refinements, prepare screenshots, a short demo script and a Devpost submission draft. Publishing and submission are still pending.
+Preserve the approved design and larger typography. Physical-device comfort, hand tracking and additive-display contrast remain unverified. Live preview inspection failed while preparing captures; its error and generated untracked package/plugin artifacts are recorded in [the demo plan](devpost/demo-plan.md). Do not include those artifacts in a broad commit without inspection. See [review notes](devpost/review-notes.md) for the user's feedback. No project packet was sent to Devpost.
