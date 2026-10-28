@@ -10,12 +10,11 @@ export class AtlasNavigationUI extends BaseScriptComponent {
  private status!:Text
  onAwake():void {
   this.sceneObject.createComponent("Component.Canvas")
-  const p=this.sceneObject.createComponent(BackPlate.getTypeName()) as BackPlate;p.size=new vec2(73,14)
-  const column=flex(obj(this.sceneObject,"NavigationContent",0.7),"NavigationColumn",69,12,false,0.7)
-  this.status=text(column,"AtlasStatus","South America  •  12 sovereign countries",67,2.8,"Headline",false,145)
-  item(column,"RegionControls",69,6,(host)=>{const row=flex(host,"RegionButtons",69,6,true,1);button(row,"RegionNorth","North",ZOOM,14,6,()=>this.onRegion.invoke("north"),145);button(row,"RegionCentral","Central",ZOOM,14,6,()=>this.onRegion.invoke("central"),145);button(row,"RegionSouth","South",ZOOM,14,6,()=>this.onRegion.invoke("south"),145);button(row,"ReturnFullMap","Full map",WORLD,20,6,()=>this.onRegion.invoke("full"),145)})
-  text(column,"AtlasHint","Aim & pinch a country • Enlarge a region for small countries",66,2.4,"Caption",false,145)
+  const p=this.sceneObject.createComponent(BackPlate.getTypeName()) as BackPlate;p.size=new vec2(15,29)
+  const column=flex(obj(this.sceneObject,"NavigationContent",0.7),"NavigationColumn",13,27.5,false,0.7)
+  this.status=text(column,"AtlasStatus","Regions",13,3,"Headline")
+  item(column,"RegionControls",13,23.5,(host)=>{const controls=flex(host,"RegionButtons",13,23.5,false,.5);button(controls,"RegionNorth","North",ZOOM,13,5.5,()=>this.onRegion.invoke("north"));button(controls,"RegionCentral","Central",ZOOM,13,5.5,()=>this.onRegion.invoke("central"));button(controls,"RegionSouth","South",ZOOM,13,5.5,()=>this.onRegion.invoke("south"));button(controls,"ReturnFullMap","Full map",WORLD,13,5.5,()=>this.onRegion.invoke("full"))})
  }
  public setStatus(message:string):void {if(this.status)this.status.text=message}
- public setRegion(region:string):void {this.region=region;this.setStatus(region==="full"?"South America  •  12 sovereign countries":region[0].toUpperCase()+region.slice(1)+" enlarged  •  select a country")}
+ public setRegion(region:string):void {this.region=region;this.setStatus(region==="full"?"Regions":region[0].toUpperCase()+region.slice(1)+" region")}
 }

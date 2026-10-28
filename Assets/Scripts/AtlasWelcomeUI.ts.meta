@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/217f5ca9-770b-4a4b-b8ea-7b54a2534ffc>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 61cc771f-38e6-44dd-85ff-351b991c53cf
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 61cc771f-38e6-44dd-85ff-351b991c53cf
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5dbd1089-6d43-4ec0-bac0-7cc184d5a77f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5dbd1089-6d43-4ec0-bac0-7cc184d5a77f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 4416b588-95d9-440a-a5ac-bf8b40b6f46e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    instructionFontSize: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - instructionFontSize: !<float> 68.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float instructionFontSize = 68 {"hint":"First-use instruction text size", "widget":"slider", "min":60, "max":76, "step":1}'

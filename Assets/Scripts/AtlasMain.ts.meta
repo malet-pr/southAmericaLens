@@ -34,6 +34,7 @@
     navigation: false
     reader: false
     transitionSeconds: false
+    welcome: false
     worldRoot: false
   ScriptTypesHidden:
     {}
@@ -49,6 +50,7 @@
       map: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
       reader: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
       navigation: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      welcome: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
       transitionSeconds: 0.400000
       deskDistanceCm: !<float> 95.000000
   ScriptTypes:
@@ -60,5 +62,6 @@
     - '// @input AssignableType_1 map {"hint":"Precise geographic map component"}'
     - '// @input AssignableType_2 reader {"hint":"Reading panel UI"}'
     - '// @input AssignableType_3 navigation {"hint":"Atlas region toolbar UI"}'
+    - '// @input AssignableType_4 welcome {"hint":"World-anchored first-use guidance placard"}'
     - '// @input float transitionSeconds = 0.4 {"hint":"Time in seconds for each rise and return"}'
-    - '// @input float deskDistanceCm = 95 {"hint":"Horizontal desk distance from the initial viewer, centimeters"}'
+    - '// @input float deskDistanceCm = 110 {"hint":"Horizontal desk distance from the initial viewer, centimeters"}'

@@ -8,6 +8,7 @@ import {AtlasMapMesh} from "../Scripts/AtlasMapMesh"
 import {AtlasReaderUI} from "../Scripts/AtlasReaderUI"
 import {COUNTRY_DATA} from "../Scripts/AtlasCountryData"
 import {AtlasLeafInteractor} from "./AtlasLeafInteractor"
+import {BackPlate} from "SpectaclesUIKit.lspkg/Scripts/BackPlate"
 
 import {object,main,map,reader,label,distance,baseline,flagMatches} from "./AtlasLeafSupport"
 @component
@@ -29,6 +30,16 @@ export class AtlasCriterion1 extends Scenario {
     expect(main().transitionHistory.slice(history)).toEqual(['return:sr','closed:sr'])
     expect(map().project(-56,4)[1]-map().project(-56,2)[1]).toBeCloseTo(fullY,4)
     for(const c of COUNTRY_DATA)expect(object('Country_'+c.id).isEnabledInHierarchy).toBe(true)
+    // Check actual country-mesh extents against the sidebar in their shared X axis.
+    const nav=object('AtlasNavigation'),plate=nav.getComponent(BackPlate.getTypeName()) as BackPlate
+    const toolbarRight=nav.getTransform().getLocalPosition().x+plate.size.x/2-map().sceneObject.getTransform().getLocalPosition().x
+    const checkClearance=()=>{for(const c of COUNTRY_DATA){const root=object('Country_'+c.id);if(!root.isEnabledInHierarchy)continue;const mesh=(root.getComponent('Component.RenderMeshVisual') as RenderMeshVisual).mesh;expect(mesh.aabbMin.x+root.getTransform().getLocalPosition().x).toBeGreaterThan(toolbarRight+.25)}}
+    checkClearance()
+    for(const view of [{id:'north',button:'RegionNorth'},{id:'central',button:'RegionCentral'},{id:'south',button:'RegionSouth'},{id:'full',button:'ReturnFullMap'}]) {
+      await i.tap(view.button,650);expect(main().region).toBe(view.id);checkClearance()
+      if(view.id==='north'){await i.tap('Country_co');expect(label('CountryName')).toBe('Colombia')}
+      if(view.id==='central'){await i.tap('Country_ec');expect(label('CountryName')).toBe('Ecuador')}
+    }
   }
 }
 

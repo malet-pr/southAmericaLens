@@ -8,6 +8,7 @@ import {AtlasMapMesh} from "../Scripts/AtlasMapMesh"
 import {AtlasReaderUI} from "../Scripts/AtlasReaderUI"
 import {COUNTRY_DATA} from "../Scripts/AtlasCountryData"
 import {AtlasLeafInteractor} from "./AtlasLeafInteractor"
+import {Button} from "SpectaclesUIKit.lspkg/Scripts/Components/Button/Button"
 
 // Names below are verified against AtlasMain/AtlasMapMesh/UI source and bootstrap.
 export function object(name:string):SceneObject {
@@ -20,6 +21,14 @@ export function map():AtlasMapMesh {return object('AtlasMap').getComponent(Atlas
 export function reader():AtlasReaderUI {return object('AtlasReader').getComponent(AtlasReaderUI.getTypeName()) as AtlasReaderUI}
 export function label(name:string):string {return (object(name).getComponent('Component.Text') as Text).text}
 export function distance(a:vec3,b:vec3):number {return a.sub(b).length}
+export function button(name:string):Button {return object(name).getComponent(Button.getTypeName()) as Button}
+export function assertTextFits(name:string):void {
+  const component=object(name).getComponent('Component.Text') as Text
+  const visibleText=component.enableRichText?component.text.replace(/<[^>]*>/g,''):component.text
+  const bounds=component.getBoundingBox(),last=component.getBoundingBox(visibleText.length-1,visibleText.length),rect=component.layoutRect
+  if(last.getSize().x<=0||last.getSize().y<=0||bounds.left<rect.left-.05||bounds.right>rect.right+.05||bounds.bottom<rect.bottom-.05||bounds.top>rect.top+.05)
+    throw new Error('Rendered text overflows '+name+': '+component.text)
+}
 export async function baseline(i:AtlasLeafInteractor):Promise<void> {
   await sleep(1500)
   expect(main().ready).toBe(true)

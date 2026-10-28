@@ -1,4 +1,5 @@
 {
+  "verifiedDate": "2026-10-27",
   "environment": {
     "lensStudio": "5.23.2.26081320",
     "platform": "SPECS",
@@ -38,10 +39,20 @@
       "scenarioId": "atlas-ik-reader-controls",
       "status": "succeeded",
       "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-readability-all-countries",
+      "status": "succeeded",
+      "target": "preview"
+    },
+    {
+      "scenarioId": "atlas-welcome-world-anchor-dismiss",
+      "status": "succeeded",
+      "target": "preview"
     }
   ],
   "logBaseline": {
-    "logFile": "C:/Users/nmale/AppData/Local/Snap/Lens Studio/logs/LensStudioLog-2026-10-26-21-10-50-139-2b01e.txt",
-    "byteOffset": 1411000
+    "logFile": "C:/Users/nmale/AppData/Local/Snap/Lens Studio/logs/LensStudioLog-2026-10-27-20-54-41-174-1545a.txt",
+    "byteOffset": 969726
   }
 }

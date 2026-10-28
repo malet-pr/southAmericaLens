@@ -24,7 +24,8 @@ export class AtlasCriterion2 extends Scenario {
     expect(label('CountryName')).toBe('Brazil');flagMatches('br')
     const country=COUNTRY_DATA.find(c=>c.id==='br')!
     const actual=(object('AtlasReader').getComponent(RoundedRectangle.getTypeName()) as RoundedRectangle).backgroundColor
-    expect(actual.x).toBeCloseTo(country.color[0]*.45,4);expect(actual.y).toBeCloseTo(country.color[1]*.45,4);expect(actual.z).toBeCloseTo(country.color[2]*.45,4)
+    const brightness=reader().backgroundBrightness
+    expect(actual.x).toBeCloseTo(country.color[0]*brightness,4);expect(actual.y).toBeCloseTo(country.color[1]*brightness,4);expect(actual.z).toBeCloseTo(country.color[2]*brightness,4)
     expect(reader().panelColor.x).toBeCloseTo(actual.x,4);expect(reader().panelColor.y).toBeCloseTo(actual.y,4);expect(reader().panelColor.z).toBeCloseTo(actual.z,4)
     const selectedZ=object('Country_br').getTransform().getLocalPosition().z
     expect(selectedZ).toBeGreaterThan(object('Country_pe').getTransform().getLocalPosition().z)

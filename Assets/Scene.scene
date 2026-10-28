@@ -6,8 +6,8 @@
     - !<own> 81a81460-eb34-4b37-a533-af79b9ebe897
     - !<own> 57097e7a-300e-49ca-9b8a-81f84c5c1b99
     - !<own> 26156ceb-fee5-40a0-9e7b-c1f3af0d2898
-    - !<own> 49dcdb7b-4513-43a4-987b-1a6567c79d2f
     - !<own> 3872de83-11b5-4778-83df-31d5121b9e54
+    - !<own> 9b11468e-a8ba-4711-8ae8-97bddff63bb3
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - id: 1
@@ -422,6 +422,21 @@
     - !<own> 6cee12e2-ac88-471e-bf95-6157c0b939a4
   Components:
     []
+- !<SceneObject/16d71e67-f411-4dd3-87e4-32ac8eb286de>
+  PrefabRemaps:
+    []
+  Name: AtlasWelcome
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 158.000000, z: 5.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 72e8ca11-01d9-41d8-8727-b7ce3b4063dd
 - !<SceneObject/1a903093-69a3-4393-b561-82f94c1e9d78>
   PrefabRemaps:
     []
@@ -590,6 +605,7 @@
     - !<own> 3dbe0db5-ff96-4c13-86c2-cca671b6a404
     - !<own> 8926a72f-c1c2-4b1b-a7c8-a224ddfd9523
     - !<own> b1be2672-66ca-4f53-8efc-ad74d9a22c5c
+    - !<own> 16d71e67-f411-4dd3-87e4-32ac8eb286de
   Components:
     []
 - !<SceneObject/264904be-9079-480a-8fc7-89bb850fa1e3>
@@ -821,7 +837,6 @@
   ScriptAsset: !<reference> 085f1659-bd12-40ac-a593-355b91a54b5c
   ScriptInputsDefault:
     transitionSeconds: true
-    deskDistanceCm: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -831,8 +846,9 @@
       map: !<MappingBased.AssignableType_1> e251f7a2-0a4a-45e3-a906-bd860cf90ad2
       reader: !<MappingBased.AssignableType_2> a5c2406e-b1e9-4bd9-a752-e06580a016a4
       navigation: !<MappingBased.AssignableType_3> 7164f48a-a88a-4f6b-8886-89cc5d832eaa
+      welcome: !<MappingBased.AssignableType_4> 72e8ca11-01d9-41d8-8727-b7ce3b4063dd
       transitionSeconds: 0.400000
-      deskDistanceCm: !<float> 95.000000
+      deskDistanceCm: !<float> 110.000000
   ScriptTypes:
     "":
       {}
@@ -988,7 +1004,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 99.000000, z: -50.000000}
+    Position: {x: -20.500000, y: 105.000000, z: 22.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -1086,21 +1102,6 @@
     - !<own> dafa9c20-c95d-4e87-83e3-b55374230a97
   Components:
     []
-- !<SceneObject/49dcdb7b-4513-43a4-987b-1a6567c79d2f>
-  PrefabRemaps:
-    []
-  Name: LEAF Plugin Bridge
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 843fa76d-8c29-470b-8ff6-870f8425fdfa
 - !<SceneObject/4d4dc3e2-4bcf-4467-a752-db83c38bc208>
   PrefabRemaps:
     []
@@ -1673,6 +1674,22 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/72e8ca11-01d9-41d8-8727-b7ce3b4063dd>
+  PrefabRemaps:
+    []
+  Name: AtlasWelcomeUI
+  Enabled: true
+  ScriptAsset: !<reference> 61cc771f-38e6-44dd-85ff-351b991c53cf
+  ScriptInputsDefault:
+    instructionFontSize: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      instructionFontSize: !<float> 68.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/748a53ad-9f64-4d8c-83cd-f6910145d535>
   PrefabRemaps:
     []
@@ -2059,22 +2076,6 @@
     - !<own> a347ac06-248d-4ccb-b481-d93381a2bccf
   Components:
     []
-- !<ScriptComponent/843fa76d-8c29-470b-8ff6-870f8425fdfa>
-  PrefabRemaps:
-    []
-  Name: MessagingBridge
-  Enabled: true
-  ScriptAsset: !<reference> 9aa407db-2872-4afc-a162-cf7faf2a0f29
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      {}
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/866ce2bf-fc26-499d-83cc-4cbba8859165>
   PrefabRemaps:
     []
@@ -2097,7 +2098,7 @@
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 137.000000, z: -15.000000}
+    Position: {x: 0.000000, y: 128.000000, z: 5.000000}
     Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     HasSegmentScaleCompensation: false
@@ -2278,6 +2279,21 @@
     []
   Components:
     - !<own> e251f7a2-0a4a-45e3-a906-bd860cf90ad2
+- !<SceneObject/9b11468e-a8ba-4711-8ae8-97bddff63bb3>
+  PrefabRemaps:
+    []
+  Name: LEAF Plugin Bridge
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fbad9676-ec3f-4d22-8fd9-6ca3d78d1cb9
 - !<SceneObject/9b6c9251-948f-486b-b5c2-80cc73d81032>
   PrefabRemaps:
     []
@@ -2403,15 +2419,20 @@
   ScriptAsset: !<reference> ef5f09af-9942-40e0-9e63-83af92b8176b
   ScriptInputsDefault:
     width: true
-    height: true
     backgroundBrightness: true
+    bodyFontSize: true
+    buttonFontSize: true
+    pageFontSize: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       width: !<float> 55.000000
-      height: !<float> 35.000000
+      height: !<float> 33.000000
       backgroundBrightness: 0.450000
+      bodyFontSize: !<float> 68.000000
+      buttonFontSize: !<float> 54.000000
+      pageFontSize: !<float> 52.000000
   ScriptTypes:
     "":
       {}
@@ -3518,6 +3539,22 @@
     - !<own> c9fb4c3e-75b9-441a-9cc2-9e5cf64c1ff1
   Components:
     []
+- !<ScriptComponent/fbad9676-ec3f-4d22-8fd9-6ca3d78d1cb9>
+  PrefabRemaps:
+    []
+  Name: MessagingBridge
+  Enabled: true
+  ScriptAsset: !<reference> 9aa407db-2872-4afc-a162-cf7faf2a0f29
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/fe9939b7-d314-4780-a607-721e3ae94e7b>
   PrefabRemaps:
     []

@@ -9,7 +9,9 @@ Open `southAmerica.esproj` in Lens Studio **5.23.2**. The build and tests were v
 * LEAF scenario registration: [Assets/Tests/LeafIndex.ts](Assets/Tests/LeafIndex.ts)
 * Country reference sources: [Assets/AtlasData/SOURCES.md](Assets/AtlasData/SOURCES.md)
 
-**All five done criteria have passing LEAF coverage. The additional IK control scenario also passed (6/6 total).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
+**All five done criteria have passing LEAF coverage. The IK control, all-country readability and welcome-guide checks also passed (8/8 total, verified 2026-10-27).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
+
+The readability update adds substantially larger text, named summary pages, visibly inactive boundary controls, an upright region sidebar with reserved map space, and a first-use world-anchored welcome sign that disappears after selecting a country.
 
 The library desk and bookcase were generated with SPECS. Country geometry, architectural detail and map supports are parametric. The experience uses bundled data and does not need runtime internet access.
 
@@ -17,6 +19,6 @@ Generated caches, editor workspaces, local integration settings and private sign
 
 ## Resume
 
-The project has been saved, all six final LEAF scenarios passed, and the exact Lens-side pass lines are in `Assets/Tests/LEAF-preview-evidence.log`. The complete map, flag, fixed close control and longest country page were reviewed together in Preview. The library was also checked after moving and looking around.
+The project has been saved, all eight final LEAF scenarios passed, and the exact Lens-side pass lines are in `Assets/Tests/LEAF-preview-evidence.log`. All 36 country-summary pages fit the larger text. The complete map, flag, fixed close control and longest country page were reviewed together in Preview. The library and welcome guide were also checked for world anchoring.
 
 Next session can start with a visual review and design refinements. There are no known unfinished done criteria. The repository is local only; it has not been published or pushed.

@@ -29,7 +29,10 @@
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     backgroundBrightness: false
+    bodyFontSize: false
+    buttonFontSize: false
     height: false
+    pageFontSize: false
     width: false
   ScriptTypesHidden:
     {}
@@ -43,10 +46,19 @@
     - width: !<float> 55.000000
       height: !<float> 35.000000
       backgroundBrightness: 0.450000
+      bodyFontSize: !<float> 68.000000
+      buttonFontSize: !<float> 54.000000
+      pageFontSize: !<float> 52.000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - '// @ui {"widget":"label", "label":"<b>Atlas reading panel</b>"}'
+    - '// @ui {"widget":"group_start", "label":"Readability"}'
     - '// @input float width = 55 {"hint":"Reading panel width in centimeters"}'
-    - '// @input float height = 35 {"hint":"Reading panel height in centimeters"}'
+    - '// @input float height = 33 {"hint":"Reading panel height in centimeters"}'
     - '// @input float backgroundBrightness = 0.45 {"hint":"Country hue brightness behind white reading text"}'
+    - '// @input float bodyFontSize = 68 {"hint":"Body text em-square size. Keep large; content never auto-shrinks.", "widget":"slider", "min":60, "max":76, "step":1}'
+    - '// @input float buttonFontSize = 54 {"hint":"Up and Down button label size", "widget":"slider", "min":50, "max":64, "step":1}'
+    - '// @input float pageFontSize = 52 {"hint":"Page heading size in the fixed footer", "widget":"slider", "min":48, "max":60, "step":1}'
+    - '// @ui {"widget":"group_end"}'
