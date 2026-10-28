@@ -54,7 +54,7 @@ All seven answers: **TODO**.
 ## Media and final checks
 
 - Public YouTube video URL: **TODO**. Less than three minutes, showing the working Lens Studio Preview.
-- Screenshots: **TODO**. Follow `devpost/demo-plan.md`.
+- Screenshots: **Captured**. Four real Preview PNGs and suggested captions are in `devpost/media/README.md`.
 - Public repository: verify the configured origin rather than creating a duplicate automatically. Before any public push, check tracked content for secrets and confirm third-party redistribution terms and LFS assets.
 - No separate website, ZIP upload or Codex session ID is requested by the current form.
 - Re-fetch current requirements and show the final, concrete project packet before any external submission action. Do not fill eligibility checkboxes or send answers without the required user confirmation.

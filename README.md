@@ -11,6 +11,7 @@ Open `southAmerica.esproj` in Lens Studio **5.23.2**. The build and tests were v
 * Submission draft: [devpost-submission.md](devpost-submission.md)
 * Demo script and screenshot targets: [devpost/demo-plan.md](devpost/demo-plan.md)
 * Official form worksheet: [devpost/official-form-answers.md](devpost/official-form-answers.md)
+* Captured Preview images: [devpost/media/README.md](devpost/media/README.md)
 
 **All five done criteria have passing LEAF coverage. The IK control, all-country readability and welcome-guide checks also passed (8/8 total, reverified 2026-10-28).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
 
@@ -33,3 +34,5 @@ Submission preparation, 2026-10-28: the local write-up, 2:35 narrated demo plan,
 Preview recovery, 2026-10-28: removed incompatible inspection tooling added by the failed capture attempt, restored SPECS 27 Interactive Preview, and reran all eight LEAF scenarios successfully. The unused IconAtlas editor plugin was unloaded and archived outside the project. The final startup was error-free and the welcome view was visually checked. Avoid AiPreviewAgent-based runtime inspection tools in this package version; use LEAF and Preview panel capture tools instead. Details are in [the test report](Assets/Tests/Results.md).
 
 Preserve the approved design and larger typography. Physical-device comfort, hand tracking and additive-display contrast remain unverified. See [review notes](devpost/review-notes.md) for the user's feedback and [the demo plan](devpost/demo-plan.md) for the recording sequence. No project packet was sent to Devpost.
+
+Screenshots captured, 2026-10-28: four real Preview PNGs (welcome, full map, Brazil card, and oblique library context) are saved with captions in `devpost/media/`. They were captured through the Preview panel without reinstalling the inspector, and visually reviewed. The user's camera pose was restored afterward. Video recording/upload, public repository verification and personal form answers remain pending.

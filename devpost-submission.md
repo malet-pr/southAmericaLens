@@ -1,6 +1,6 @@
 # South America Library Atlas
 
-Local draft prepared 2026-10-28 for [Learn AR with SPECS](https://learn-specs.devpost.com/). Nothing in this file has been sent to Devpost. Public media and personal form answers are still pending.
+Local draft prepared 2026-10-28 for [Learn AR with SPECS](https://learn-specs.devpost.com/). Nothing in this file has been sent to Devpost. Four local screenshots are captured; the public video and personal form answers are still pending.
 
 ## One-line Summary
 
@@ -80,11 +80,11 @@ TODO: verify anonymous public access, complete asset availability and the final 
 
 TODO: public YouTube URL.
 
-The [demo plan](devpost/demo-plan.md) provides a 2 minute 35 second recording sequence, narration and five screenshot targets. Show the working Preview, including paging, switching, closing, enlargement and a brief walk around the library. Keep the final video under three minutes.
+The [demo plan](devpost/demo-plan.md) provides a 2 minute 35 second recording sequence and narration. Show the working Preview, including paging, switching, closing, enlargement and a brief walk around the library. Keep the final video under three minutes.
 
 ## Screenshot Shot List
 
-Capture five real Preview images: the welcome view, a readable Brazil card with the complete map, North enlargement with Suriname selected, an alternate country card, and an oblique room view. Captions and filenames are in the demo plan. No screenshots are claimed as captured in this preparation pass.
+Four real Preview images are captured and visually reviewed: the welcome view, full map with regional controls, readable Brazil card, and an oblique view of the desk and bookcase context. See the [screenshot gallery and captions](devpost/media/README.md). Image 03 is the recommended main screenshot. A separate Suriname or alternate-country still is optional; the demo video should show those interactions.
 
 ## Submission Readiness Notes
 
@@ -92,9 +92,9 @@ Capture five real Preview images: the welcome view, a readable Brazil card with 
 - All five done criteria have recorded passing LEAF coverage; 8/8 scenarios passed again on 2026-10-28, including text fit for all 36 country pages.
 - Registration was verified live and the user explicitly confirmed a current rules review on 2026-10-28. Eligibility attestations and survey choices still require the user's own answers.
 - Current official requirements and form fields were checked through Devpost on 2026-10-28. The deadline is November 9, 2026 at 22:00 UTC / 19:00 Buenos Aires. Recheck before the final action. [Official rules](https://learn-specs.devpost.com/rules).
-- Remaining substantial work: capture media, record/upload the video, verify public repository access, and complete personal form answers. This packet is a draft, not ready for the final submission action.
+- Remaining substantial work: record/upload the video, verify public repository access, and complete personal form answers. Four supporting screenshots are already saved locally. This packet is a draft, not ready for the final submission action.
 - Before a public push, check tracked content for credentials and review third-party asset/data redistribution terms. Source attribution is recorded; a final publication check has not been completed in this pass.
-- Live inspection automation failed while preparing captures and introduced an incompatible diagnostic package. That tooling was removed, clean Preview startup was restored and all eight tests passed again. See the diagnostic handoff in the demo plan. Submission media files are still pending.
+- Live inspection automation initially introduced an incompatible diagnostic package. That tooling was removed, clean Preview startup was restored and all eight tests passed again. Four screenshots were subsequently captured with the Preview panel screenshot tool, without reinstalling the inspector. See the diagnostic handoff in the demo plan. Video publication remains pending.
 
 ## Known Limitations
 

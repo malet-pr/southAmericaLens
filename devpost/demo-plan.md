@@ -28,17 +28,16 @@ Keep the last card in view as the narration ends. Use simple cuts for reposition
 
 ## Screenshot shot list
 
-Save the real images under `devpost/media/` when available; the paths below are targets, not existing files.
+Four images have now been captured under `devpost/media/` and visually reviewed. See the [gallery and captions](media/README.md).
 
-| Target filename | State to capture | Caption |
+| Captured filename | State | Caption |
 | --- | --- | --- |
 | `01-welcome.png` | Initial level gaze, readable welcome instruction with library context. | “A world-anchored welcome introduces the atlas.” |
-| `02-brazil-map.png` | Brazil Basics page, full map, flag, fixed X and region controls visible together. | “Country facts rise from a colorful map on the library desk.” |
-| `03-suriname-north.png` | North enlargement with Suriname selected and card settled. | “Regional enlargement supports small-country selection.” |
-| `04-argentina-card.png` | Argentina after switching from another country, readable card and map. | “A single reading card updates after the previous one returns.” |
-| `05-library-room.png` | Oblique view after a short move, desk and inward-facing bookcases visible. | “The library and atlas stay in place as the viewer explores.” |
+| `02-full-map.png` | Full map after the welcome has dismissed; all region controls visible. | “Twelve countries share an inclined library desk with regional navigation.” |
+| `03-brazil-reading-card.png` | Brazil's final summary page, full map, flag, fixed X and region controls visible together. | “Country facts rise from a colorful map on the library desk.” |
+| `04-library-room.png` | Oblique view of the desk, open card and bookcase context. | “A spatial atlas sits within the surrounding library.” |
 
-Still images establish appearance, not animation order. The video must show the switching and closing transitions.
+Use image 03 as the main screenshot. Extra Suriname/North and alternate-country stills are optional. Still images establish appearance, not animation order. The video must show the switching and closing transitions.
 
 ## Current capture status and technical handoff
 
@@ -55,3 +54,7 @@ Later on 2026-10-28, the user reported TS2307 errors from the inspection package
 SPECS 27 Interactive Preview was restored from a paused No Simulation configuration. Compilation and clean startup passed, and all eight LEAF scenarios were rerun successfully. A final Preview panel screenshot was reviewed inline to confirm the welcome view renders; it was not saved as a submission media file. The canonical evidence now records the 2026-10-28 rerun.
 
 Use the working Preview UI or panel screenshot tools for the next media capture. Do not invoke runtime scene-inspection tools that auto-install AiPreviewAgent packages in this project version. The approved atlas design and larger typography were preserved.
+
+### Screenshot capture completed
+
+Later in the same session, the Preview panel screenshot tool saved the four images listed above without installing any diagnostic package. All files were visually reviewed. The existing page/control and map/region LEAF scenarios also succeeded when used to prepare clean capture states. The user's original camera position and orientation were restored after the capture pass. No application source or scene layout was changed. The video is still pending.
