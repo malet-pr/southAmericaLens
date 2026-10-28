@@ -12,7 +12,7 @@ Open `southAmerica.esproj` in Lens Studio **5.23.2**. The build and tests were v
 * Demo script and screenshot targets: [devpost/demo-plan.md](devpost/demo-plan.md)
 * Official form worksheet: [devpost/official-form-answers.md](devpost/official-form-answers.md)
 
-**All five done criteria have passing LEAF coverage. The IK control, all-country readability and welcome-guide checks also passed (8/8 total, verified 2026-10-27).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
+**All five done criteria have passing LEAF coverage. The IK control, all-country readability and welcome-guide checks also passed (8/8 total, reverified 2026-10-28).** Application compilation and runtime checks passed. Real-glasses comfort and hand-tracking reliability remain unproven.
 
 The readability update adds substantially larger text, named summary pages, visibly inactive boundary controls, an upright region sidebar with reserved map space, and a first-use world-anchored welcome sign that disappears after selecting a country.
 
@@ -30,4 +30,6 @@ User review completed, 2026-10-28: the user confirmed that the project matches t
 
 Submission preparation, 2026-10-28: the local write-up, 2:35 narrated demo plan, five screenshot targets and official form worksheet are drafted. The user confirmed the current rules review, and local workflow state is recorded in `.devpost-hackathon-state.json`. Public screenshots/video, repository-access verification and personal form answers remain pending. No application code changed and no tests were rerun during this preparation pass.
 
-Preserve the approved design and larger typography. Physical-device comfort, hand tracking and additive-display contrast remain unverified. Live preview inspection failed while preparing captures; its error and generated untracked package/plugin artifacts are recorded in [the demo plan](devpost/demo-plan.md). Do not include those artifacts in a broad commit without inspection. See [review notes](devpost/review-notes.md) for the user's feedback. No project packet was sent to Devpost.
+Preview recovery, 2026-10-28: removed incompatible inspection tooling added by the failed capture attempt, restored SPECS 27 Interactive Preview, and reran all eight LEAF scenarios successfully. The unused IconAtlas editor plugin was unloaded and archived outside the project. The final startup was error-free and the welcome view was visually checked. Avoid AiPreviewAgent-based runtime inspection tools in this package version; use LEAF and Preview panel capture tools instead. Details are in [the test report](Assets/Tests/Results.md).
+
+Preserve the approved design and larger typography. Physical-device comfort, hand tracking and additive-display contrast remain unverified. See [review notes](devpost/review-notes.md) for the user's feedback and [the demo plan](devpost/demo-plan.md) for the recording sequence. No project packet was sent to Devpost.

@@ -2,7 +2,7 @@
 
 Built and verified in Lens Studio **5.23.2**, targeting **SPECS**. LEAF **2.0.2** with SIK/UIKit package **2.0.0**. Tests execute in Preview; no physical glasses were available.
 
-**Verified 2026-10-27 after the readability update: 8/8 LEAF scenarios passed. All five done criteria have coverage. No done criterion is untested.** Each scenario ran serially with diagnostic policy `fail-fast`, so an IK error could not silently fall back to scripted SIK input. The policy is now also the registered scenario default.
+**Reverified 2026-10-28 after removing incompatible inspection tooling: 8/8 LEAF scenarios passed. All five done criteria have coverage. No done criterion is untested.** Each scenario ran serially with diagnostic policy `fail-fast`, so an IK error could not silently fall back to scripted SIK input. The policy is also the registered scenario default. The readability update first passed on 2026-10-27.
 
 | Done criterion | Scenario | Final outcome | What was verified |
 | --- | --- | --- | --- |
@@ -29,9 +29,19 @@ These visual observations supplement LEAF: mesh counts and text assertions alone
 
 ### User simulator review — 2026-10-28
 
-The user confirmed that the project matches the discussed design, reported no problems reading the cards or moving around the room, and appreciated removal of the headless person from an early pass. The user approved continuing with demo and submission preparation, with no further design changes requested. This is reported manual simulator feedback, not a new LEAF run or physical-device test. The eight automated pass results above remain dated 2026-10-27.
+The user confirmed that the project matches the discussed design, reported no problems reading the cards or moving around the room, and appreciated removal of the headless person from an early pass. The user approved continuing with demo and submission preparation, with no further design changes requested. This is reported manual simulator feedback, not a physical-device test. The automated results above were subsequently rerun during Preview recovery on 2026-10-28.
 
 **Logic proven in Preview. Feel unproven on real glasses:** long-term comfort, actual hand tracking, additive-display contrast in a real room and perceived educational advantage over a phone.
+
+## Preview recovery — 2026-10-28
+
+The screenshot-preparation attempt auto-installed `AiPreviewAgentInspect.lspkg`. Its example scripts import `UIKit.lspkg` and `InteractionKit.lspkg`, which do not match this project's installed `SpectaclesUIKit.lspkg` and `SpectaclesInteractionKit.lspkg`. These unused examples caused TS2307 compilation errors and prevented every Lens script from starting.
+
+Removed the inspector's scene handler through VirtualScene and removed the inspector, Icons and Motion packages through Lens Studio's AssetManager. Unloaded the unused IconAtlas editor plugin and archived its eight generated files outside the project at `C:/Users/nmale/AppData/Local/Temp/SouthAmericaAtlas-RemovedInspection-20261028/IconAtlas`. No atlas application source or accepted layout changed.
+
+Preview was also paused with No Simulation selected. Restored SPECS 27 / Interactive with the bundled Plane source. Forced TypeScript compilation succeeded. A fresh runtime reset had no errors and printed `[Atlas] ready: 12 countries, world anchored`. All eight registered LEAF scenarios then passed serially, with authoritative Lens-side evidence extracted into the linked log. A final clean reset and panel screenshot confirmed the readable welcome view renders again.
+
+Avoid tools that auto-install AiPreviewAgent packages in this project until their compatibility is verified. Use the existing LEAF workflow and Preview panel capture tools; do not call runtime scene-inspection tools as a readiness probe.
 
 ## Build contents
 

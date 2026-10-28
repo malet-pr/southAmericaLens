@@ -1,5 +1,5 @@
 {
-  "verifiedDate": "2026-10-27",
+  "verifiedDate": "2026-10-28",
   "environment": {
     "lensStudio": "5.23.2.26081320",
     "platform": "SPECS",
@@ -52,7 +52,7 @@
     }
   ],
   "logBaseline": {
-    "logFile": "C:/Users/nmale/AppData/Local/Snap/Lens Studio/logs/LensStudioLog-2026-10-27-20-54-41-174-1545a.txt",
-    "byteOffset": 969726
+    "logFile": "C:/Users/nmale/AppData/Local/Snap/Lens Studio/logs/LensStudioLog-2026-10-28-08-46-36-592-125f0.txt",
+    "byteOffset": 916787
   }
 }

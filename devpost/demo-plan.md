@@ -48,4 +48,10 @@ No new screenshot or video was captured during the 2026-10-28 preparation pass. 
 
 The failed tool attempt left untracked `Packages/AiPreviewAgentInspect.lspkg`, `Packages/Icons.lspkg`, `Packages/Motion.lspkg`, their metadata, and an `IconAtlas` plugin directory. These generated files were not included in the preparation commit. No tracked scene or application source change was observed. Inspect these artifacts before any later broad `git add` or new preview-automation setup; do not treat them as part of the verified build.
 
-The next capture pass can use the working Preview UI manually or resume MCP inspection after addressing the reported bridge error. The prior 8/8 LEAF evidence remains dated 2026-10-27; it does not claim this new capture attempt passed.
+### Resolved after the user reported compilation errors
+
+Later on 2026-10-28, the user reported TS2307 errors from the inspection package's example scripts. The package imported `UIKit.lspkg` / `InteractionKit.lspkg`, whereas the working atlas uses the Spectacles-prefixed packages. The inspector handler and the three added packages were removed through Lens Studio. The unused IconAtlas plugin was unloaded and archived outside the project at `C:/Users/nmale/AppData/Local/Temp/SouthAmericaAtlas-RemovedInspection-20261028/IconAtlas`.
+
+SPECS 27 Interactive Preview was restored from a paused No Simulation configuration. Compilation and clean startup passed, and all eight LEAF scenarios were rerun successfully. A final Preview panel screenshot was reviewed inline to confirm the welcome view renders; it was not saved as a submission media file. The canonical evidence now records the 2026-10-28 rerun.
+
+Use the working Preview UI or panel screenshot tools for the next media capture. Do not invoke runtime scene-inspection tools that auto-install AiPreviewAgent packages in this project version. The approved atlas design and larger typography were preserved.

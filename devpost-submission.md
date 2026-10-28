@@ -34,7 +34,7 @@ The approved [design brief](devpost/design-brief.md) specified placement, intera
 
 Iteration focused on visible behavior: larger type, clearer map framing, a world-anchored welcome guide, named pages and disabled controls at page boundaries. Testing caught an input-state issue where a visually inactive control could still receive interaction after re-enabling the panel; the fix and tests check the actual Interactable state.
 
-Eight LEAF scenarios passed in Preview on 2026-10-27. On 2026-10-28, I reviewed the simulator and confirmed that the design matched the plan, the cards were readable and I could move around the room without difficulty. Physical glasses were unavailable.
+Eight LEAF scenarios first passed in Preview on 2026-10-27 and passed again on 2026-10-28 after removing incompatible diagnostic tooling. On 2026-10-28, I reviewed the simulator and confirmed that the design matched the plan, the cards were readable and I could move around the room without difficulty. Physical glasses were unavailable.
 
 ## Key Features
 
@@ -64,7 +64,7 @@ LEAF 2.0.2 covers the five done criteria and three additional checks. [Results](
 5. Select another country while a card is open, then close it with X. Observe the return-before-rise sequence.
 6. Select North, choose Suriname, then select Full map. Region changes close an open card before changing the map.
 7. Use WASD to move, Q/E to move vertically, and right-drag or Shift to look around. Return to the desk and confirm that the world did not follow the camera.
-8. For automated checks, open the LEAF panel, choose Preview and run the eight scenarios registered in `Assets/Tests/LeafIndex.ts` serially. The recorded 2026-10-27 results are 8/8 passing; these have not been rerun during submission drafting.
+8. For automated checks, open the LEAF panel, choose Preview and run the eight scenarios registered in `Assets/Tests/LeafIndex.ts` serially. The latest recorded results are 8/8 passing on 2026-10-28, after Preview recovery.
 
 ## Public Demo Link
 
@@ -89,12 +89,12 @@ Capture five real Preview images: the welcome view, a readable Brazil card with 
 ## Submission Readiness Notes
 
 - The user accepted the simulator design and readability on 2026-10-28. No application code was changed for preparation.
-- All five done criteria have recorded passing LEAF coverage; 8/8 scenarios passed on 2026-10-27, including text fit for all 36 country pages.
+- All five done criteria have recorded passing LEAF coverage; 8/8 scenarios passed again on 2026-10-28, including text fit for all 36 country pages.
 - Registration was verified live and the user explicitly confirmed a current rules review on 2026-10-28. Eligibility attestations and survey choices still require the user's own answers.
 - Current official requirements and form fields were checked through Devpost on 2026-10-28. The deadline is November 9, 2026 at 22:00 UTC / 19:00 Buenos Aires. Recheck before the final action. [Official rules](https://learn-specs.devpost.com/rules).
 - Remaining substantial work: capture media, record/upload the video, verify public repository access, and complete personal form answers. This packet is a draft, not ready for the final submission action.
 - Before a public push, check tracked content for credentials and review third-party asset/data redistribution terms. Source attribution is recorded; a final publication check has not been completed in this pass.
-- Live inspection automation failed while preparing captures; see the diagnostic handoff in the demo plan. No substitute image or fabricated screenshot was used.
+- Live inspection automation failed while preparing captures and introduced an incompatible diagnostic package. That tooling was removed, clean Preview startup was restored and all eight tests passed again. See the diagnostic handoff in the demo plan. Submission media files are still pending.
 
 ## Known Limitations
 

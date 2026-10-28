@@ -35,3 +35,7 @@ The user explicitly confirmed the current rules review. A local submission draft
 An existing GitHub origin points to `malet-pr/southAmericaLens`. Its public visibility could not be verified because the connected GitHub metadata lookup returned 404. No repository was created, pushed or made public in this pass.
 
 Live Lens scene inspection failed after the tool installed its inspection handler and reset Preview. Preview automation stopped; no new captures or LEAF results are claimed. See `demo-plan.md` for the exact error and generated untracked package/plugin artifacts. The next work is media capture, video publication, repository verification and the participant's personal form answers, followed by another preparation check.
+
+## Preview recovery — 2026-10-28
+
+The user subsequently reported compiler errors caused by the newly installed inspection package importing UIKit/InteractionKit paths that do not exist in this project. Removed the unused inspection handler and added packages through Lens Studio; unloaded and archived the generated IconAtlas plugin outside the project. Restored SPECS 27 Interactive Preview from a paused No Simulation state. Compilation and clean startup passed, all eight LEAF scenarios passed again, and the welcome view was checked in a fresh panel capture. The atlas source and accepted layout were unchanged. Media files and the other preparation items above remain pending.
